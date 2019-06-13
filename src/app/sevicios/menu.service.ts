@@ -87,14 +87,7 @@ getMenu(){
 return this.menu; 
 }
     }
-    export class ClienteService{
-
-        private personName:any;
-        //se crea clase con id y name
-        name:string;
-
-    getPersonName(){
-        return this.personName;
-    }
-
-};
+    
+        
+    
+    

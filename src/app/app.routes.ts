@@ -1,5 +1,5 @@
 import { RouterModule, Routes } from '@angular/router';
-import { Component } from '@angular/core';
+
 import { HomeComponent } from './components/home/home.component';
 import { MeseroComponent }from './components/mesero/mesero.component';
 import { CocinaComponent }from './components/cocina/cocina.component';

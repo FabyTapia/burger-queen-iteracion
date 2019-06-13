@@ -1,4 +1,4 @@
-import { Component, OnInit, SimpleChanges } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 import { MenuService } from '../../sevicios/menu.service';
 
 @Component({
@@ -9,9 +9,10 @@ import { MenuService } from '../../sevicios/menu.service';
 export class MeseroComponent implements OnInit {
 
   private menu:any[]=[];
-  public menuToShow:any[]=[];
+  public menuToShow:any[]=[];//se crea nuevo arreglo para mostrar tipo
 
-  public filterBy:string='Breakfast';
+  public filterBy:string='Lunch';
+  
 
 //propiedad privada solo se ve en este componente
   constructor( private _menuService:MenuService){
@@ -27,4 +28,16 @@ export class MeseroComponent implements OnInit {
     this.menuToShow = this.menu.filter(item => item.Type == this.filterBy);
   }
   
+  handleBreakfastClick(){
+    this.filterBy = "Breakfast";
+    this.updateMenuToShow()
+  }
+
+
+  
 }
+    
+
+  
+
+    
