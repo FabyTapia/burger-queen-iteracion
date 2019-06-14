@@ -8,14 +8,14 @@ import { MenuService } from '../../sevicios/menu.service';
 })
 export class MeseroComponent implements OnInit {
 
-  private menu:any[]=[];
+  public menu:any[]=[];
   public menuToShow:any[]=[];//se crea nuevo arreglo para mostrar tipo
 
   public filterBy:string='Lunch';
   
 
 //propiedad privada solo se ve en este componente
-  constructor( private _menuService:MenuService){
+  constructor( public _menuService:MenuService){
 
   }
 //llamo al menu desde service

@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core'
 @Injectable()//decorador
     export class MenuService{
 
-    private menu:any[] = 
+    public menu:any[] = 
     [
     { 
     Type:"Breakfast",

@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MeseroComponent } from './mesero.component';
+import { MenuService } from '../../sevicios/menu.service';
+
 
 describe('MeseroComponent', () => {
   let component: MeseroComponent;
@@ -8,7 +10,8 @@ describe('MeseroComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MeseroComponent ]
+      declarations: [ MeseroComponent ],
+      providers: [MenuService]
     })
     .compileComponents();
   }));
