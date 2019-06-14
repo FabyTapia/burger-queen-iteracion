@@ -2,12 +2,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './components/home/home.component';
 import { MeseroComponent }from './components/mesero/mesero.component';
-import { CocinaComponent }from './components/cocina/cocina.component';
+
 
 const APP_ROUTES: Routes = [//arreglo de rutas
 { path: 'home', component: HomeComponent},
 { path: 'mesero', component: MeseroComponent},
-{ path: 'cocina', component: CocinaComponent},
 { path: '**', pathMatch:'full', redirectTo: 'home'}
 ];
 

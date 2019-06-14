@@ -15,7 +15,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { MeseroComponent } from './components/mesero/mesero.component';
-import { CocinaComponent } from './components/cocina/cocina.component';
+
 
 
 
@@ -25,7 +25,6 @@ import { CocinaComponent } from './components/cocina/cocina.component';
     NavbarComponent,
     HomeComponent,
     MeseroComponent,
-    CocinaComponent
   ],
   imports: [
     BrowserModule,

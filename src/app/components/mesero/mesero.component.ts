@@ -32,7 +32,10 @@ export class MeseroComponent implements OnInit {
     this.filterBy = "Breakfast";
     this.updateMenuToShow()
   }
-
+  handleLunchClick(){
+    this.filterBy = "Lunch";
+    this.updateMenuToShow()
+  }
 
   
 }

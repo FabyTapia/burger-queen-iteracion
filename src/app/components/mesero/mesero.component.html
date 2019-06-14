@@ -1,13 +1,19 @@
-<h1>
-    Menu</h1>
+<div class="container">
+    <h1>Menu</h1>
 
-<div class="form-check" *ngFor="let menuItem of menuToShow">
+    <!-- llamo a mi f(x) para imprimir arreglo con evento click  -->
+    <hr>
+    <button class="btn btn-outline-primary" (click)="handleBreakfastClick()">Desayuno</button><br><button class="btn btn-outline-primary" (click)="handleLunchClick()">Almuerzos</button>
+    <hr>
 
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
+    <div class="form-check" *ngFor="let menuItem of menuToShow">
+
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
       {{menuItem.Producto}}  <br>
     </label>
-    <label class="form-check-label" for="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
       {{menuItem.Valor}}
     </label>
+    </div>
 </div>
